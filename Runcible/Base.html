@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Runcible::Base
+  
+    &mdash; Documentation by YARD 0.8.3
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (B)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Runcible.html" title="Runcible (module)">Runcible</a></span></span>
+     &raquo; 
+    <span class="title">Base</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Runcible::Base
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Runcible::Base</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/runcible/base.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Resources/Consumer.html" title="Runcible::Resources::Consumer (class)">Resources::Consumer</a></span>, <span class='object_link'><a href="Resources/ConsumerGroup.html" title="Runcible::Resources::ConsumerGroup (class)">Resources::ConsumerGroup</a></span>, <span class='object_link'><a href="Resources/EventNotifier.html" title="Runcible::Resources::EventNotifier (class)">Resources::EventNotifier</a></span>, <span class='object_link'><a href="Resources/Repository.html" title="Runcible::Resources::Repository (class)">Resources::Repository</a></span>, <span class='object_link'><a href="Resources/RepositorySchedule.html" title="Runcible::Resources::RepositorySchedule (class)">Resources::RepositorySchedule</a></span>, <span class='object_link'><a href="Resources/Role.html" title="Runcible::Resources::Role (class)">Resources::Role</a></span>, <span class='object_link'><a href="Resources/Task.html" title="Runcible::Resources::Task (class)">Resources::Task</a></span>, <span class='object_link'><a href="Resources/Unit.html" title="Runcible::Resources::Unit (class)">Resources::Unit</a></span>, <span class='object_link'><a href="Resources/User.html" title="Runcible::Resources::User (class)">Resources::User</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_http_auth_header-class_method" title="add_http_auth_header (class method)">+ (Object) <strong>add_http_auth_header</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_oauth_header-class_method" title="add_oauth_header (class method)">+ (Object) <strong>add_oauth_header</strong>(method, path, headers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#call-class_method" title="call (class method)">+ (Object) <strong>call</strong>(method, path, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#combine_get_params-class_method" title="combine_get_params (class method)">+ (Object) <strong>combine_get_params</strong>(path, params) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#config-class_method" title="config (class method)">+ (Object) <strong>config</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#config%3D-class_method" title="config= (class method)">+ (Object) <strong>config=</strong>(conf = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Accepted Configuration Values.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#generate_payload-class_method" title="generate_payload (class method)">+ (Object) <strong>generate_payload</strong>(options) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#process_response-class_method" title="process_response (class method)">+ (Object) <strong>process_response</strong>(response) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#required_params-class_method" title="required_params (class method)">+ (Object) <strong>required_params</strong>(local_names, binding, keys_to_remove = []) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_http_auth_header-class_method">
+  
+    + (<tt>Object</tt>) <strong>add_http_auth_header</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 151</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_add_http_auth_header identifier id'>add_http_auth_header</span>
+  <span class='rubyid_return return kw'>return</span> <span class='lbrace token'>{</span><span class='symbol val'>:user</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:user</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='symbol val'>:password</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:http_auth</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span><span class='rbrace token'>}</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_oauth_header-class_method">
+  
+    + (<tt>Object</tt>) <strong>add_oauth_header</strong>(method, path, headers) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 155</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_add_oauth_header identifier id'>add_oauth_header</span><span class='lparen token'>(</span><span class='rubyid_method identifier id'>method</span><span class='comma token'>,</span> <span class='rubyid_path identifier id'>path</span><span class='comma token'>,</span> <span class='rubyid_headers identifier id'>headers</span><span class='rparen token'>)</span>
+  <span class='rubyid_default_options identifier id'>default_options</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:site</span>               <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:url</span><span class='rbrack token'>]</span><span class='comma token'>,</span>
+                      <span class='symbol val'>:http_method</span>        <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_method identifier id'>method</span><span class='comma token'>,</span>
+                      <span class='symbol val'>:request_token_path</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;&quot;</span><span class='comma token'>,</span>
+                      <span class='symbol val'>:authorize_path</span>     <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;&quot;</span><span class='comma token'>,</span>
+                      <span class='symbol val'>:access_token_path</span>  <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;&quot;</span> <span class='rbrace token'>}</span>
+
+  <span class='rubyid_default_options identifier id'>default_options</span><span class='lbrack token'>[</span><span class='symbol val'>:ca_file</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:ca_cert_file</span><span class='rbrack token'>]</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:ca_cert_file</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span>
+  <span class='rubyid_consumer identifier id'>consumer</span> <span class='assign token'>=</span> <span class='rubyid_OAuth constant id'>OAuth</span><span class='colon2 op'>::</span><span class='rubyid_Consumer constant id'>Consumer</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth_key</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth_secret</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='rubyid_default_options identifier id'>default_options</span><span class='rparen token'>)</span>
+
+  <span class='rubyid_method_to_http_request identifier id'>method_to_http_request</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span> <span class='symbol val'>:get</span>    <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_Net constant id'>Net</span><span class='colon2 op'>::</span><span class='rubyid_HTTP constant id'>HTTP</span><span class='colon2 op'>::</span><span class='rubyid_Get constant id'>Get</span><span class='comma token'>,</span>
+                             <span class='symbol val'>:post</span>   <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_Net constant id'>Net</span><span class='colon2 op'>::</span><span class='rubyid_HTTP constant id'>HTTP</span><span class='colon2 op'>::</span><span class='rubyid_Post constant id'>Post</span><span class='comma token'>,</span>
+                             <span class='symbol val'>:put</span>    <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_Net constant id'>Net</span><span class='colon2 op'>::</span><span class='rubyid_HTTP constant id'>HTTP</span><span class='colon2 op'>::</span><span class='rubyid_Put constant id'>Put</span><span class='comma token'>,</span>
+                             <span class='symbol val'>:delete</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_Net constant id'>Net</span><span class='colon2 op'>::</span><span class='rubyid_HTTP constant id'>HTTP</span><span class='colon2 op'>::</span><span class='rubyid_Delete constant id'>Delete</span> <span class='rbrace token'>}</span>
+
+  <span class='rubyid_http_request identifier id'>http_request</span> <span class='assign token'>=</span> <span class='rubyid_method_to_http_request identifier id'>method_to_http_request</span><span class='lbrack token'>[</span><span class='rubyid_method identifier id'>method</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_path identifier id'>path</span><span class='rparen token'>)</span>
+  <span class='rubyid_consumer identifier id'>consumer</span><span class='dot token'>.</span><span class='rubyid_sign! fid id'>sign!</span><span class='lparen token'>(</span><span class='rubyid_http_request identifier id'>http_request</span><span class='rparen token'>)</span>
+
+  <span class='rubyid_headers identifier id'>headers</span><span class='lbrack token'>[</span><span class='string val'>'Authorization'</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='rubyid_http_request identifier id'>http_request</span><span class='lbrack token'>[</span><span class='string val'>'Authorization'</span><span class='rbrack token'>]</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_headers identifier id'>headers</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="call-class_method">
+  
+    + (<tt>Object</tt>) <strong>call</strong>(method, path, options = {}) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 55</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_call identifier id'>call</span><span class='lparen token'>(</span><span class='rubyid_method identifier id'>method</span><span class='comma token'>,</span> <span class='rubyid_path identifier id'>path</span><span class='comma token'>,</span> <span class='rubyid_options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='rubyid_clone_config identifier id'>clone_config</span> <span class='assign token'>=</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_config identifier id'>config</span><span class='dot token'>.</span><span class='rubyid_clone identifier id'>clone</span>
+  <span class='comment val'>#on occation path will already have prefix (sync cancel)</span>
+  <span class='rubyid_path identifier id'>path</span> <span class='assign token'>=</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:api_path</span><span class='rbrack token'>]</span> <span class='plus op'>+</span> <span class='rubyid_path identifier id'>path</span> <span class='rubyid_if if_mod kw'>if</span> <span class='notop op'>!</span><span class='rubyid_path identifier id'>path</span><span class='dot token'>.</span><span class='rubyid_start_with? fid id'>start_with?</span><span class='lparen token'>(</span><span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:api_path</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+
+  <span class='rubyid_RestClient constant id'>RestClient</span><span class='dot token'>.</span><span class='rubyid_log identifier id'>log</span> <span class='assign token'>=</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:logger</span><span class='rbrack token'>]</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:logger</span><span class='rbrack token'>]</span>
+
+  <span class='rubyid_headers identifier id'>headers</span> <span class='assign token'>=</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:headers</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_clone identifier id'>clone</span>
+
+  <span class='rubyid_get_params identifier id'>get_params</span> <span class='assign token'>=</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:params</span><span class='rbrack token'>]</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:params</span><span class='rbrack token'>]</span>
+  <span class='rubyid_path identifier id'>path</span> <span class='assign token'>=</span> <span class='rubyid_combine_get_params identifier id'>combine_get_params</span><span class='lparen token'>(</span><span class='rubyid_path identifier id'>path</span><span class='comma token'>,</span> <span class='rubyid_get_params identifier id'>get_params</span><span class='rparen token'>)</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_get_params identifier id'>get_params</span>
+
+
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth</span><span class='rbrack token'>]</span>
+    <span class='rubyid_headers identifier id'>headers</span> <span class='assign token'>=</span> <span class='rubyid_add_oauth_header identifier id'>add_oauth_header</span><span class='lparen token'>(</span><span class='rubyid_method identifier id'>method</span><span class='comma token'>,</span> <span class='rubyid_path identifier id'>path</span><span class='comma token'>,</span> <span class='rubyid_headers identifier id'>headers</span><span class='rparen token'>)</span> <span class='rubyid_if if_mod kw'>if</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:oauth</span><span class='rbrack token'>]</span>
+    <span class='rubyid_headers identifier id'>headers</span><span class='lbrack token'>[</span><span class='string val'>&quot;pulp-user&quot;</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:user</span><span class='rbrack token'>]</span>
+    <span class='rubyid_client identifier id'>client</span> <span class='assign token'>=</span> <span class='rubyid_RestClient constant id'>RestClient</span><span class='colon2 op'>::</span><span class='rubyid_Resource constant id'>Resource</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:url</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+  <span class='rubyid_else else kw'>else</span>
+    <span class='rubyid_client identifier id'>client</span> <span class='assign token'>=</span> <span class='rubyid_RestClient constant id'>RestClient</span><span class='colon2 op'>::</span><span class='rubyid_Resource constant id'>Resource</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:url</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='symbol val'>:user</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_clone_config identifier id'>clone_config</span><span class='lbrack token'>[</span><span class='symbol val'>:user</span><span class='rbrack token'>]</span><span class='comma token'>,</span> <span class='symbol val'>:password</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='rubyid_config identifier id'>config</span><span class='lbrack token'>[</span><span class='symbol val'>:http_auth</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:password</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_args identifier id'>args</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rubyid_method identifier id'>method</span><span class='rbrack token'>]</span>
+  <span class='rubyid_args identifier id'>args</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_generate_payload identifier id'>generate_payload</span><span class='lparen token'>(</span><span class='rubyid_options identifier id'>options</span><span class='rparen token'>)</span> <span class='rubyid_if if_mod kw'>if</span> <span class='lbrack token'>[</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='symbol val'>:put</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_include? fid id'>include?</span><span class='lparen token'>(</span><span class='rubyid_method identifier id'>method</span><span class='rparen token'>)</span>
+  <span class='rubyid_args identifier id'>args</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_headers identifier id'>headers</span> 
+
+  <span class='rubyid_process_response identifier id'>process_response</span><span class='lparen token'>(</span><span class='rubyid_client identifier id'>client</span><span class='lbrack token'>[</span><span class='rubyid_path identifier id'>path</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_send identifier id'>send</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='rubyid_args identifier id'>args</span><span class='rparen token'>)</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="combine_get_params-class_method">
+  
+    + (<tt>Object</tt>) <strong>combine_get_params</strong>(path, params) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 83</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_combine_get_params identifier id'>combine_get_params</span><span class='lparen token'>(</span><span class='rubyid_path identifier id'>path</span><span class='comma token'>,</span> <span class='rubyid_params identifier id'>params</span><span class='rparen token'>)</span>
+  <span class='rubyid_query_string identifier id'>query_string</span>  <span class='assign token'>=</span> <span class='rubyid_params identifier id'>params</span><span class='dot token'>.</span><span class='rubyid_collect identifier id'>collect</span> <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_k identifier id'>k</span><span class='comma token'>,</span> <span class='rubyid_v identifier id'>v</span><span class='bitor op'>|</span>
+    <span class='rubyid_if if kw'>if</span> <span class='rubyid_v identifier id'>v</span><span class='dot token'>.</span><span class='rubyid_is_a? fid id'>is_a?</span> <span class='rubyid_Array constant id'>Array</span>
+      <span class='rubyid_v identifier id'>v</span><span class='dot token'>.</span><span class='rubyid_collect identifier id'>collect</span><span class='lbrace token'>{</span><span class='bitor op'>|</span><span class='rubyid_y identifier id'>y</span><span class='bitor op'>|</span> <span class='dstring node'>&quot;#{k.to_s}=#{y.to_s}&quot;</span> <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='rubyid_join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>'&amp;'</span><span class='rparen token'>)</span>
+    <span class='rubyid_else else kw'>else</span>
+      <span class='dstring node'>&quot;#{k.to_s}=#{v.to_s}&quot;</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_end end kw'>end</span><span class='dot token'>.</span><span class='rubyid_flatten identifier id'>flatten</span><span class='lparen token'>(</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='rubyid_join identifier id'>join</span><span class='lparen token'>(</span><span class='string val'>'&amp;'</span><span class='rparen token'>)</span>
+  <span class='rubyid_path identifier id'>path</span> <span class='plus op'>+</span> <span class='dstring node'>&quot;?#{query_string}&quot;</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="config-class_method">
+  
+    + (<tt>Object</tt>) <strong>config</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 51</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_config identifier id'>config</span> 
+  <span class='rubyid_@@config ivar id'>@@config</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="config=-class_method">
+  
+    + (<tt>Object</tt>) <strong>config=</strong>(conf = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Accepted Configuration Values</p>
+
+<p>:user     Pulp username :password Password for this user :oauth    Oauth
+credentials :headers  Additional headers e.g. content-type =&gt;
+“application/json” :url      Scheme and hostname for the pulp server
+e.g. <a href="https://localhost">localhost</a>/ :api_path URL path for the
+api e.g. pulp/api/v2/</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 40</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_config identifier id'>config</span><span class='assign token'>=</span><span class='lparen token'>(</span><span class='rubyid_conf identifier id'>conf</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span>
+  <span class='rubyid_@@config ivar id'>@@config</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span>
+    <span class='symbol val'>:api_path</span>   <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'/pulp/api/v2/'</span><span class='comma token'>,</span>
+    <span class='symbol val'>:url</span>        <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'https://localhost'</span><span class='comma token'>,</span>
+    <span class='symbol val'>:user</span>       <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>''</span><span class='comma token'>,</span>
+    <span class='symbol val'>:http_auth</span>  <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrace token'>{</span><span class='symbol val'>:password</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span> <span class='rbrace token'>}</span><span class='comma token'>,</span>
+    <span class='symbol val'>:headers</span>    <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='lbrace token'>{</span><span class='symbol val'>:content_type</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'application/json'</span><span class='comma token'>,</span>
+                    <span class='symbol val'>:accept</span>       <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>'application/json'</span><span class='rbrace token'>}</span>
+  <span class='rbrace token'>}</span><span class='dot token'>.</span><span class='rubyid_merge identifier id'>merge</span><span class='lparen token'>(</span><span class='rubyid_conf identifier id'>conf</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="generate_payload-class_method">
+  
+    + (<tt>Object</tt>) <strong>generate_payload</strong>(options) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 94</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_generate_payload identifier id'>generate_payload</span><span class='lparen token'>(</span><span class='rubyid_options identifier id'>options</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span>
+    <span class='rubyid_if if kw'>if</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:optional</span><span class='rbrack token'>]</span>
+      <span class='rubyid_if if kw'>if</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:required</span><span class='rbrack token'>]</span>
+        <span class='rubyid_payload identifier id'>payload</span> <span class='assign token'>=</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:required</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='rubyid_merge identifier id'>merge</span><span class='lparen token'>(</span><span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:optional</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+      <span class='rubyid_else else kw'>else</span>
+        <span class='rubyid_payload identifier id'>payload</span> <span class='assign token'>=</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:optional</span><span class='rbrack token'>]</span>
+      <span class='rubyid_end end kw'>end</span>
+    <span class='rubyid_elsif elsif kw'>elsif</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:delta</span><span class='rbrack token'>]</span>
+      <span class='rubyid_payload identifier id'>payload</span> <span class='assign token'>=</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span>
+    <span class='rubyid_else else kw'>else</span>
+      <span class='rubyid_payload identifier id'>payload</span> <span class='assign token'>=</span> <span class='rubyid_options identifier id'>options</span><span class='lbrack token'>[</span><span class='symbol val'>:payload</span><span class='rbrack token'>]</span><span class='lbrack token'>[</span><span class='symbol val'>:required</span><span class='rbrack token'>]</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_else else kw'>else</span>
+    <span class='rubyid_payload identifier id'>payload</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span>
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_payload identifier id'>payload</span><span class='dot token'>.</span><span class='rubyid_to_json identifier id'>to_json</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="process_response-class_method">
+  
+    + (<tt>Object</tt>) <strong>process_response</strong>(response) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 114</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_process_response identifier id'>process_response</span><span class='lparen token'>(</span><span class='rubyid_response identifier id'>response</span><span class='rparen token'>)</span>
+  <span class='rubyid_begin begin kw'>begin</span>
+    <span class='rubyid_body identifier id'>body</span> <span class='assign token'>=</span> <span class='rubyid_JSON constant id'>JSON</span><span class='dot token'>.</span><span class='rubyid_parse identifier id'>parse</span><span class='lparen token'>(</span><span class='rubyid_response identifier id'>response</span><span class='dot token'>.</span><span class='rubyid_body identifier id'>body</span><span class='rparen token'>)</span>
+    <span class='rubyid_if if kw'>if</span> <span class='rubyid_body identifier id'>body</span><span class='dot token'>.</span><span class='rubyid_respond_to? fid id'>respond_to?</span> <span class='colon op'>:</span><span class='rubyid_with_indifferent_access identifier id'>with_indifferent_access</span>
+      <span class='rubyid_body identifier id'>body</span> <span class='assign token'>=</span> <span class='rubyid_body identifier id'>body</span><span class='dot token'>.</span><span class='rubyid_with_indifferent_access identifier id'>with_indifferent_access</span>
+    <span class='rubyid_elsif elsif kw'>elsif</span> <span class='rubyid_body identifier id'>body</span><span class='dot token'>.</span><span class='rubyid_is_a? fid id'>is_a?</span> <span class='rubyid_Array constant id'>Array</span>
+      <span class='rubyid_body identifier id'>body</span> <span class='assign token'>=</span> <span class='rubyid_body identifier id'>body</span><span class='dot token'>.</span><span class='rubyid_collect identifier id'>collect</span>  <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_i identifier id'>i</span><span class='bitor op'>|</span>
+        <span class='rubyid_i identifier id'>i</span><span class='dot token'>.</span><span class='rubyid_respond_to? fid id'>respond_to?</span><span class='lparen token'>(</span><span class='symbol val'>:with_indifferent_access</span><span class='rparen token'>)</span> <span class='question op'>?</span> <span class='rubyid_i identifier id'>i</span><span class='dot token'>.</span><span class='rubyid_with_indifferent_access identifier id'>with_indifferent_access</span> <span class='colon op'>:</span> <span class='rubyid_i identifier id'>i</span>
+      <span class='rubyid_end end kw'>end</span>
+    <span class='rubyid_end end kw'>end</span>
+    <span class='rubyid_response identifier id'>response</span> <span class='assign token'>=</span> <span class='rubyid_RestClient constant id'>RestClient</span><span class='colon2 op'>::</span><span class='rubyid_Response constant id'>Response</span><span class='dot token'>.</span><span class='rubyid_create identifier id'>create</span><span class='lparen token'>(</span><span class='rubyid_body identifier id'>body</span><span class='comma token'>,</span> <span class='rubyid_response identifier id'>response</span><span class='dot token'>.</span><span class='rubyid_net_http_res identifier id'>net_http_res</span><span class='comma token'>,</span> <span class='rubyid_response identifier id'>response</span><span class='dot token'>.</span><span class='rubyid_args identifier id'>args</span><span class='rparen token'>)</span>
+  <span class='rubyid_rescue rescue kw'>rescue</span> <span class='rubyid_JSON constant id'>JSON</span><span class='colon2 op'>::</span><span class='rubyid_ParserError constant id'>ParserError</span>
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_response identifier id'>response</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="required_params-class_method">
+  
+    + (<tt>Object</tt>) <strong>required_params</strong>(local_names, binding, keys_to_remove = []) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/runcible/base.rb', line 131</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_required_params identifier id'>required_params</span><span class='lparen token'>(</span><span class='rubyid_local_names identifier id'>local_names</span><span class='comma token'>,</span> <span class='rubyid_binding identifier id'>binding</span><span class='comma token'>,</span> <span class='rubyid_keys_to_remove identifier id'>keys_to_remove</span><span class='assign token'>=</span><span class='lbrack token'>[</span><span class='rbrack token'>]</span><span class='rparen token'>)</span>
+  <span class='rubyid_local_names identifier id'>local_names</span> <span class='assign token'>=</span> <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_reduce identifier id'>reduce</span><span class='lparen token'>(</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='rparen token'>)</span> <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_acc identifier id'>acc</span><span class='comma token'>,</span> <span class='rubyid_v identifier id'>v</span><span class='bitor op'>|</span>
+    <span class='rubyid_value identifier id'>value</span> <span class='assign token'>=</span> <span class='rubyid_binding identifier id'>binding</span><span class='dot token'>.</span><span class='rubyid_eval identifier id'>eval</span><span class='lparen token'>(</span><span class='rubyid_v identifier id'>v</span><span class='dot token'>.</span><span class='rubyid_to_s identifier id'>to_s</span><span class='rparen token'>)</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_v identifier id'>v</span> <span class='eq op'>==</span> <span class='symbol val'>:_</span>
+    <span class='rubyid_acc identifier id'>acc</span><span class='lbrack token'>[</span><span class='rubyid_v identifier id'>v</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='rubyid_value identifier id'>value</span> <span class='rubyid_unless unless_mod kw'>unless</span> <span class='rubyid_value identifier id'>value</span><span class='dot token'>.</span><span class='rubyid_nil? fid id'>nil?</span>
+    <span class='rubyid_acc identifier id'>acc</span>
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='comment val'>#The double delete is to support 1.8.7 and 1.9.3</span>
+  <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='symbol val'>:payload</span><span class='rparen token'>)</span>
+  <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='symbol val'>:optional</span><span class='rparen token'>)</span>
+  <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='string val'>&quot;payload&quot;</span><span class='rparen token'>)</span>
+  <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='string val'>&quot;optional&quot;</span><span class='rparen token'>)</span>
+  <span class='rubyid_keys_to_remove identifier id'>keys_to_remove</span><span class='dot token'>.</span><span class='rubyid_each identifier id'>each</span> <span class='rubyid_do do kw'>do</span> <span class='bitor op'>|</span><span class='rubyid_key identifier id'>key</span><span class='bitor op'>|</span>
+    <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='rubyid_key identifier id'>key</span><span class='rparen token'>)</span>
+    <span class='rubyid_local_names identifier id'>local_names</span><span class='dot token'>.</span><span class='rubyid_delete identifier id'>delete</span><span class='lparen token'>(</span><span class='rubyid_key identifier id'>key</span><span class='dot token'>.</span><span class='rubyid_to_sym identifier id'>to_sym</span><span class='rparen token'>)</span>
+  <span class='rubyid_end end kw'>end</span>
+
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_local_names identifier id'>local_names</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Jan 10 09:43:16 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.3 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
